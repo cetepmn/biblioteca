@@ -1,0 +1,203 @@
+<html>
+ <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     margin: 0;
+   }
+   .header, .footer {
+     background-color: #1E3A8A;
+     padding: 16px;
+     display: flex;
+     align-items: center;
+     color: white;
+   }
+   .header i, .header img {
+     margin-right: 8px;
+   }
+   .header span {
+     font-size: 1.125rem;
+   }
+   .container {
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+     flex-grow: 1;
+     margin-bottom: 30px;
+   }
+   .card {
+     background-color: #D1D5DB;
+     padding: 24px;
+     border-radius: 8px;
+     width: 100%;
+     max-width: 1024px;
+   }
+   .profile {
+     display: flex;
+     align-items: center;
+     margin-bottom: 16px;
+     margin-top: 20px;
+   }
+   .profile img {
+     border-radius: 50%;
+     width: 96px;
+     height: 96px;
+     margin-right: 16px;
+   }
+   .profile h1 {
+     font-size: 1.5rem;
+     font-weight: bold;
+   }
+   .profile p {
+     font-size: 1.125rem;
+   }
+   .status, .history {
+     background-color: #9CA3AF;
+     padding: 16px;
+     border-radius: 8px;
+     margin-top: 50px;
+   }
+   .status {
+     width: 32%;
+   }
+   .history {
+     width: 64%;
+     margin-left: 16px;
+     display: flex;
+     flex-direction: column;
+   }
+   .status p, .history p {
+     font-weight: bold;
+   }
+   .status .available {
+     color: #10B981;
+   }
+   .status .pending {
+     color: #F59E0B;
+   }
+   .status .late {
+     color: #EF4444;
+   }
+   .history .flex {
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
+     overflow-y: auto;
+     background-color: 9CA3AF;
+     padding: 8px;
+     border-radius: 8px;
+   }
+   .history .flex div {
+     display: flex;
+     flex-direction: column;
+   }
+   .history .pending {
+     color: #F59E0B;
+   }
+   .history .delivered {
+     color: #10B981;
+   }
+   .buttons {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 40px;
+   }
+   .buttons button {
+     font-weight: bold;
+     padding: 8px 16px;
+     border-radius: 8px;
+     border: none;
+     cursor: pointer;
+   }
+   .buttons .rent {
+     background-color: #9CA3AF;
+     color: black;
+   }
+   .buttons .cancel {
+     background-color: white;
+     color: black;
+     border: 1px solid #9CA3AF;
+   }
+   .footer {
+     justify-content: center;
+     text-align: center;
+   }
+   .flex {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 16px;
+   }
+   .message-controls {
+     margin-top: 16px;
+   }
+   .message-controls input {
+     padding: 8px;
+     margin-right: 8px;
+     border-radius: 4px;
+     border: 1px solid #9CA3AF;
+   }
+   .status-item {
+     display: flex;
+     align-items: center;
+     margin-bottom: 8px;
+   }
+   .status-item p {
+     margin-left: 8px;
+   }
+   a{
+    color: white;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+  <a href="alugar.html"><i class="fas fa-arrow-left"></i></a> 
+   <img alt="Logo" height="50" src="buscar.png" width="50"/>
+   <span>ALUGAR LIVRO</span>
+  </div>
+  <div class="container">
+   <div class="card">
+    <div class="profile">
+     <img alt="User profile picture" src="https://media.discordapp.net/attachments/1160360482515984425/1297890083843870801/IMG_20240521_110307955.jpg?ex=67ea81d5&is=67e93055&hm=3d280f3fd69d442062f42b833956f6b72eb222c7115af5bd1490fae54a076e19&=&format=webp&width=478&height=851"/>
+     <div>
+      <h1>BRIAN LIMA OLIVEIRA</h1>
+      <p>3º INFO MAT</p>
+     </div>
+    </div>
+    <div class="flex">
+     <div class="status">
+      <p>SITUAÇÃO:</p>
+      <div class="status-item">
+       <input type="checkbox"/>
+       <p class="available">DISPONÍVEL</p>
+      </div>
+      <div class="status-item">
+       <input type="checkbox"/>
+       <p class="pending">PENDENTE</p>
+      </div>
+      <div class="status-item">
+       <input type="checkbox"/>
+       <p class="late">ATRASADO</p>
+      </div>
+     </div>
+     <div class="history">
+      <p>HISTÓRICO:</p>
+      <div class="flex" id="message-container" contenteditable="true">
+      </div>
+     </div>
+    </div>
+    <div class="buttons">
+     <button class="rent">ALUGAR</button>
+     <button class="cancel">CANCELAR</button>
+    </div>
+   </div>
+  </div>
+  <footer class="footer">
+   
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,158 @@
+<html>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .left, .header .right {
+            display: flex;
+            align-items: center;
+        }
+        .header .left i, .header .right i {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+        .header .left span, .header .right span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header .left span{
+            margin-left: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 32px auto;
+            padding: 24px;
+            background-color: #e5e7eb;
+            border-radius: 8px;
+            flex: 1;
+        }
+        .search-bar {
+            background-color: #d1d5db;
+            padding: 8px 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .search-bar input {
+            border: none;
+            background-color: transparent;
+            color: #4b5563;
+            font-weight: bold;
+            font-size: 16px;
+            width: 100%;
+            padding: 8px;
+            margin-left: 8px;
+        }
+        .search-bar i {
+            font-size: 20px;
+            color: #4b5563;
+        }
+        .user-list .user-item {
+            display: flex;
+            align-items: center;
+            background-color: #9ca3af;
+            padding: 17px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            width: 400%;
+            margin-left: -400px;
+        }
+        .user-list .user-item img {
+            border-radius: 50%;
+            margin-right: 24px;
+            width: 60px;
+            height: 60px;
+        }
+        .user-list .user-item span {
+            flex: 1;
+            font-weight: bold;
+            color: black;
+            font-size: 18px;
+        }
+        .user-list .user-item button {
+            background-color: #d1d5db;
+            color: black;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 16px;
+        }
+        a{color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+           <a href="index.html"><i class="fas fa-arrow-left"></i></a> 
+            <img src="gerir.png" width="50" height="50" aria-modal="true" alt="">
+            <span>GERIR USUÁRIOS</span>
+        </div>
+        <div class="right">
+           <a href="cadastro.html"><i class="fas fa-user-plus" style="color: #22c55e;"></i>
+            <span>CADASTRAR</span></a> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Nome do estudante...">
+        </div>
+        <div class="user-list">
+            <div class="user-item">
+                <img src="https://placehold.co/60x60" alt="User icon">
+                <span>BRIAN LIMA OLIVEIRA</span>
+                <span>3º INFO MAT</span>
+              <a href=""><button>EDITAR...</button></a>  
+            </div>
+            <div class="user-item">
+                <img src="https://placehold.co/60x60" alt="User icon">
+                <span>GABRIEL DA SILVA F.</span>
+                <span>3º INFO MAT</span>
+               <a href=""><button>EDITAR...</button></a> 
+            </div>
+            <div class="user-item">
+                <img src="https://placehold.co/60x60" alt="User icon">
+                <span>ZÓI ESTUPRA GATO</span>
+                <span>3º INFO MAT</span>
+              <a href=""><button>EDITAR...</button></a>  
+            </div>
+            <div class="user-item">
+                <img src="https://placehold.co/60x60" alt="User icon">
+                <span>JOTINHA ALÉRGICO</span>
+                <span>3º INFO MAT</span>
+              <a href=""><button>EDITAR...</button></a>  
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+</body>
+</html>

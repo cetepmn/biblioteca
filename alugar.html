@@ -1,0 +1,149 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #edf2f7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .bg-blue-900 {
+      background-color: #1e3a8a;
+    }
+    .bg-gray-200 {
+      background-color: #edf2f7;
+    }
+    .bg-gray-300 {
+      background-color: #e2e8f0;
+    }
+    .bg-gray-400 {
+      background-color: #124881;
+      color: #be1111;
+    }
+    .bg-gray-100 {
+      background-color: #f7fafc;
+    }
+    .text-white {
+      color: #ffffff;
+    }
+    .text-black {
+      color: #000000;
+    }
+    .text-xl {
+      font-size: 1.25rem;
+    }
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+    .p-4 {
+      padding: 1rem;
+    }
+    .p-2 {
+      padding: 0.5rem;
+    }
+    .mr-4 {
+      margin-right: 1rem;
+    }
+    .mr-2 {
+      margin-right: 0.5rem;
+    }
+    .rounded-lg {
+      border-radius: 0.5rem;
+    }
+    .rounded-full {
+      border-radius: 9999px;
+    }
+    .flex {
+      display: flex;
+    }
+    .flex-col {
+      flex-direction: column;
+    }
+    .flex-grow {
+      flex-grow: 1;
+    }
+    .flex-items-center {
+      align-items: center;
+    }
+    .justify-between {
+      justify-content: space-between;
+    }
+    .max-w-4xl {
+      max-width: 56rem;
+    }
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .mt-8 {
+      margin-top: 2rem;
+    }
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+    .w-full {
+      width: 100%;
+    }
+ 
+  </style>
+ </head>
+ <body>
+  <div class="bg-blue-900 p-4 flex items-center">
+  <a href="buscador.html"><i class="fas fa-arrow-left text-white text-2xl mr-4"></i></a> 
+   <div class="flex items-center">
+    <img alt="Stack of books icon" class="mr-2" height="50" src="buscar.png" width="50"/>
+    <span class="text-white text-xl">
+     ALUGAR LIVRO
+    </span>
+   </div>
+  </div>
+  <div class="flex-grow">
+   <div class="max-w-4xl mx-auto mt-8 bg-gray-100 p-4 rounded-lg">
+    <div class="flex justify-between bg-gray-400 p-4 rounded-lg mb-4">
+     <span class="text-black text-xl">
+      DOM QUIXOTE
+     </span>
+     <span class="text-black text-xl">
+      MIGUEL DE C.
+     </span>
+    </div>
+    <div class="bg-gray-400 p-4 rounded-lg mb-4 ">
+     <input class=" w-full bg-gray-700  p-2 rounded-full " placeholder="PROCURAR ALUNO..." type="text"/>
+    </div>
+    <div class="bg-gray-300 p-4 rounded-lg flex items-center justify-between mb-4">
+     <div class="flex items-center">
+      <i class="fas fa-user text-white text-2xl bg-gray-400 p-2 rounded-full mr-4"></i>
+      <span class="text-black text-xl">
+       GABRIEL DA SILVA F.
+      </span>
+     </div>
+     <span class="text-black text-xl">
+      3º INFO MAT
+     </span>
+    <a href="alugaruser.html"><button class="bg-gray-400 text-black text-xl p-2 rounded-lg">
+      ALUGAR
+     </button></a> 
+    </div>
+    <div class="bg-gray-300 p-4 rounded-lg flex items-center justify-between">
+     <div class="flex items-center">
+      <i class="fas fa-user text-white text-2xl bg-gray-400 p-2 rounded-full mr-4"></i>
+      <span class="text-black text-xl">
+       BRIAN LIMA OLIVEIRA
+      </span>
+     </div>
+     <span class="text-black text-xl">
+      3º INFO MAT
+     </span>
+    <a href="alugaruser.html"><button class="bg-gray-400 text-black text-xl p-2 rounded-lg">
+      ALUGAR
+     </button></a> 
+    </div>
+   </div>
+  </div>
+  <footer class="bg-blue-900 p-4 text-center text-white">
+  
+  </footer>
+ </body>
+</html>
